@@ -43,3 +43,4 @@ Route::get('/form-example', function() { return Inertia::render('FormExample');}
 Route::get('/list-manager', function() { return Inertia::render('ListManager'); })->name('list-manager');
 Route::get('/infinite-scroll', function() { return Inertia::render('InfiniteScroll'); })->name('infinite-scroll');
 Route::get('/cinema', function() { return Inertia::render('Cinema'); })->name('cinema');
+Route::get('/food-order', function() { return Inertia::render('FoodOrder'); })->name('food-order');
