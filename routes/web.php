@@ -36,3 +36,10 @@ Route::get('/about-page', function (){ return Inertia::render('AboutPage'); })->
 Route::get('/home-page', function (){ return Inertia::render('HomePage'); })->name('home-page');
 //WorkshopWeek2//
 Route::get("/bootstrap", function () { return Inertia::render('Bootstrap'); })->name('bootstrap');
+//Week3//
+Route::get('/circle', function () { return Inertia::render('Circle');})->name('circle');
+Route::get('/counter', function() { return Inertia::render('Counter');})->name('counter');
+Route::get('/form-example', function() { return Inertia::render('FormExample');})->name('form-example');
+Route::get('/list-manager', function() { return Inertia::render('ListManager'); })->name('list-manager');
+Route::get('/infinite-scroll', function() { return Inertia::render('InfiniteScroll'); })->name('infinite-scroll');
+Route::get('/cinema', function() { return Inertia::render('Cinema'); })->name('cinema');
