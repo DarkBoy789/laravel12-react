@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Product;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -42,5 +43,9 @@ Route::get('/counter', function() { return Inertia::render('Counter');})->name('
 Route::get('/form-example', function() { return Inertia::render('FormExample');})->name('form-example');
 Route::get('/list-manager', function() { return Inertia::render('ListManager'); })->name('list-manager');
 Route::get('/infinite-scroll', function() { return Inertia::render('InfiniteScroll'); })->name('infinite-scroll');
-Route::get('/cinema', function() { return Inertia::render('Cinema'); })->name('cinema');
-Route::get('/food-order', function() { return Inertia::render('FoodOrder'); })->name('food-order');
+Route::get('/quiz3', function() { return Inertia::render('Quiz3'); })->name('quiz3');
+//week4//
+Route::get('/product', function() { $products = \App\Models\Product::all (); return Inertia::render('ProductList', compact('products')); })->name('product');
+Route::get('/product-others', function () { return Inertia::render('ProductOthers');})->name ('product-others'); 
+//quiz week4//
+Route::get('/quiz4', function() { return Inertia::render('Quiz4'); });
